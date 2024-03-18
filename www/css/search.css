@@ -1,0 +1,30 @@
+body{
+    background-color: white;
+}
+#PreservIT{
+    color: black;
+    text-align: center;
+}
+.title{
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+.header {
+    position: relative;
+    text-align: right;
+  }
+  .header img {
+    height: 50px;
+    width: auto; 
+  }
+  .search-bar {
+    position: relative;
+    margin: 20px;
+  }
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
