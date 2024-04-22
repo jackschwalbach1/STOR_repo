@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon -L ./www/index.js"
+    "start": "nodemon -L ./www/server.js"
   },
   "keywords": [
     "ecosystem:cordova"
@@ -39,9 +39,11 @@
     "cordova-common": "^5.0.0",
     "cross-spawn": "^7.0.3",
     "dedent": "^1.5.1",
+    "dotenv": "^16.4.5",
     "elementtree": "^0.1.7",
     "endent": "^2.1.0",
     "execa": "^5.1.1",
+    "express": "^4.19.2",
     "extsprintf": "^1.4.1",
     "fast-glob": "^3.3.2",
     "fast-json-parse": "^1.0.3",
@@ -79,6 +81,7 @@
     "micromatch": "^4.0.5",
     "mimic-fn": "^2.1.0",
     "minimatch": "^3.1.2",
+    "nodemon": "^2.0.0",
     "nopt": "^7.2.0",
     "npm-run-path": "^4.0.1",
     "objectorarray": "^1.0.5",
@@ -89,6 +92,7 @@
     "path-is-absolute": "^1.0.1",
     "path-key": "^3.1.1",
     "path-parse": "^1.0.7",
+    "pg-promise": "^11.6.0",
     "picomatch": "^2.3.1",
     "pify": "^4.0.1",
     "plist": "^3.1.0",
@@ -128,4 +132,6 @@
     "xmlbuilder": "^15.1.1",
     "yallist": "^4.0.0"
   }
+
 }
+
