@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/search.css">
+        <title>STOR</title>
+        <style>
+            body{
+        background-color: white;
+        }
+        #PreservIT{
+            color: black;
+            text-align: center;
+        }
+        .title{
+            text-align: center;
+            margin: 0;
+            position: relative;
+        }
+        .header {
+            position: relative;
+            text-align: right;
+        }
+        .header img {
+            height: 50px;
+            width: auto; 
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <img src="./img/STOR_logo.png" alt="STOR">
+          </div>
+
+          <div class="title">
+            <h1 id="PreservIT">PreservIT</h1>
+          </div>
+
+          <form method="post" action="">
+            <input type="text" class="form-contorl" name="keyword" id="keyword" placeholder="What's cooking?"/>
+            <button id="submit_button" class="btn btn-primary" type="submit">Search</button>
+        </form> 
+
+        <script src="cordova.js"></script>
+        <script src="js/search.js"></script>
+    </body>
+</html>

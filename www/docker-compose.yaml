@@ -9,6 +9,19 @@ services:
       - postgres-data:/var/lib/postgresql/data
       - ./data:/data:ro
       - ./entrypoint.d/:/docker-entrypoint-initdb.d:ro
-
+  web:
+    image: node:lts
+    user: 'node'
+    working_dir: /STOR_repo
+    env_file: .env
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - db
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./:/STOR_repo
+    command: 'npm start'
 volumes:
   postgres-data: {}
